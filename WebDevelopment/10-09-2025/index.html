@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo dos Palitinhos</title>
+    <style>
+        .box {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jogo dos Palitinhos</h1>
+    Seu nome:
+    <input type="text" id="boxName">
+    <button onclick="alterarNome()">Alterar nome</button>
+
+    <table>
+        <tr>
+            <td class="box">
+                <h2 id="nomeZum">EU</h2>
+                <button onclick="alterarNome()">Alterar nome</button>
+                <h3>
+                    Palitos: <span id="qtdeEu">3</span>
+                </h3>
+                <button onclick="clicouBotaoJogar()">Jogar</button>
+            </td>
+            <td class="box">
+                <h2>Computador</h2>
+                <h3>
+                    Palitos: <span id="qtdeComp">3</span>
+                </h3>
+                <button>Jogar</button>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        /*
+        let idade = prompt("Digite sua idade")
+        idade = parseInt(idade)
+        idade++
+        console.log("Sua idade é: "+ idade)
+        */
+
+        function clicouBotaoJogar() {
+            console.log("Estou fazendo o L")
+        }
+
+        function alterarNome() {
+            let elemInput = document.getElementById("nomeZum")
+            elem.innerText = prompt("Digite seu nome: ")
+            console.log("elem", elem)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+/*
+Implemente o firmware (software de sistema embarcado) para um semáforo
+de 3 fases, sendo:
+- Ao ser energizado, o sistema fica fechado (apenas led vermelho ligado);
+- Após o tempo de semáforo fechado se esgotar, o sistema vai para
+o estado aberto (desliga o led vermelho e liga o verde);
+- Após o tempo de sistema aberto se esgotar, o led verde é apagado e o
+amarelo aceso (estado de atenção);
+- Após o tempo de amarelo se esgotar, o sistema desliga o amarelo e liga o
+vermelho, completando assim um ciclo, que se repete;
+- A duração mínima do sinal amarelo é de 5 segundos.
+*/
+int ledVermelho = 10;
+int ledAmarelo = 9;
+int ledVerde = 8;
+int tempoVermelho = 5000;
+int tempoAmarelo = 5000;
+int tempoVerde = 5000;
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(ledAmarelo, OUTPUT);
+  pinMode(ledVermelho, OUTPUT);
+  pinMode(ledVerde, OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  digitalWrite(ledVermelho, HIGH);
+  delay(tempoVermelho);
+  digitalWrite(ledVermelho, LOW);
+
+  digitalWrite(ledVerde, HIGH);
+  delay(tempoVerde);
+  digitalWrite(ledVerde, LOW);
+
+  digitalWrite(ledAmarelo, HIGH);
+  delay(tempoAmarelo);
+  digitalWrite(ledAmarelo, LOW);
+}
