@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Vetores</h1>
+
+    <script>
+        let nomes = ["Wenderson", "Douglas", "Chimpazini", "Sei lá", "Ana"]
+        let sobre = ["Soares", "Silva", "Santos", "Bananini", "Alves"]
+
+        //for(let i = 0; i < nomes.length; i++) {
+        //    console.log("OOOObaaaa", nomes[i])
+        //}
+
+        let pos = Math.floor(Math.random()*10000) % nomes.length
+        let pos2 = Math.floor(Math.random()*10000) % sobre.length
+        console.log("pos", pos)
+        console.log("pos2", pos2)
+        console.log("Bom dia,", nomes[pos], sobre[pos2])
+
+    </script>
+</body>
+</html>
