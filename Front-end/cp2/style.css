@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat" , sans-serif;
+    color: #191919;
+    background-color: #FFF;
+    box-sizing: border-box;
+}
+
+.conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.banner-inicial {
+    background-color: #202832;
+    color: #FFF;
+    padding: 70px 0;
+    background-image: url('./images/background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.banner-conteudo-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo-texto h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+
+.botoes {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+.btn-primario {
+    background-color: #FFF;
+    color: #191919;
+}
+
+.btn-secundario {
+    background-color: #DBDBDB;
+    color: #191919;
+    opacity: 0.7;
+}
+
+.banner-imagem img {
+    max-width: 450px;
+    height: auto;
+}
+
+.produtos {
+    background-color: #202832;
+    color: #191919;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.produtos h2 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.lista-produtos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card-produto {
+    background-color: #fff;
+    max-width: 300px;
+    padding: 20px;
+    border-top-right-radius: 55px;
+    border-bottom-left-radius: 55px;
+    text-align: center;
+}
+
+.card-produto img {
+    border-top-right-radius: 55px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.card-produto h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin: 0 0 10px 0;
+}
+
+.card-produto p {
+    color: #191919;
+    font-weight: 300;
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.btn-inferior {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9em;
+    background-color: #DBDBDB;
+    color: #191919;
+    margin-top: 50px;
+}
+
+.detalhes {
+    background-color: #DBDBDB;
+    padding: 80px 0;
+}
+
+.detalhes .conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.detalhes-imagem {
+    flex-basis: 50%;
+}
+
+.detalhes-imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-top-right-radius: 140px;
+}
+
+.detalhes-texto {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.detalhes-texto h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #191919;
+    margin: 0 0 15px 0;
+}
+
+.detalhes-texto p {
+    font-size: 1em;
+    font-weight: 400;
+    color: #191919;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.detalhes-texto a {
+    font-weight: 700;
+    color: #191919;
+    text-decoration: none;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.rodape {
+    background-color: #202832;
+    color: #FFF;
+    padding: 60px 0;
+}
+
+.rodape .conteudo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.rodape-coluna {
+    flex-basis: 250px;
+}
+
+.rodape-coluna h4 {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #FFF;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+}
+
+.rodape-coluna p, .rodape-coluna a {
+    font-size: 0.9em;
+    font-weight: 300;
+    color: #DBDBDB;
+    text-decoration: none;
+    line-height: 1.7;
+    margin: 5px 0;
+}
+
+.rodape-coluna p {
+    margin: 0 0 10px 0;
+}
+
+.rodape-coluna a:hover {
+    text-decoration: underline;
+}
