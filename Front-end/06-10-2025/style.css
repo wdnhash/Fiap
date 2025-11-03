@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -119,4 +120,51 @@ h4 {
 
 #final h2 {
     margin-bottom: 0;
+}
+
+nav {
+    background: #62c82e;
+    width: 100%;
+    box-shadow: 1px 1px 10px #00000070;
+    position: fixed;
+    top: 0;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+li {
+    padding: 5px 0;
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    display: block;
+    padding: 10px 25px;
+}
+
+.botao {
+    transition: all .5s ease-in-out;
+
+    &:hover {
+        background-color: #3b8318;
+        transform: scale(1.2);
+    }
+}
+
+#personagens .personagem-item {
+    cursor: pointer;
+
+    &:hover img {
+        transform: translateY(-15px);
+    }
+
+    img {
+        transition: all .5s ease-in-out;
+    }
 }
